@@ -4,6 +4,31 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
 
+// Import all gallery images
+import bishopHermanMemorial from "@/assets/bishop-herman-memorial.jpg";
+import bishopKumordji from "@/assets/bishop-kumordji.jpg";
+import communityGroup from "@/assets/community-group.jpg";
+import faithfulWoman from "@/assets/faithful-woman.jpg";
+import flagBearer from "@/assets/flag-bearer.jpg";
+import heroBand from "@/assets/hero-band.jpg";
+import heroBishops from "@/assets/hero-bishops.jpg";
+import heroChrismMass from "@/assets/hero-chrism-mass.jpg";
+import priests from "@/assets/priests.jpg";
+import procession from "@/assets/procession.jpg";
+
+const galleryImages = [
+  { src: heroChrismMass, alt: "Chrism Mass Celebration", caption: "Annual Chrism Mass" },
+  { src: heroBishops, alt: "Bishops Gathering", caption: "Episcopal Conference" },
+  { src: heroBand, alt: "Diocesan Band", caption: "Liturgical Celebrations" },
+  { src: priests, alt: "Diocesan Priests", caption: "Clergy of Keta-Akatsi" },
+  { src: bishopKumordji, alt: "Bishop Gabriel Edoe Kumordji", caption: "Our Shepherd" },
+  { src: bishopHermanMemorial, alt: "Bishop Herman Memorial", caption: "Bishop Emeritus Memorial" },
+  { src: procession, alt: "Liturgical Procession", caption: "Solemn Procession" },
+  { src: flagBearer, alt: "Flag Bearer", caption: "Diocesan Celebrations" },
+  { src: communityGroup, alt: "Community Gathering", caption: "Faithful Community" },
+  { src: faithfulWoman, alt: "Faithful Woman", caption: "Women of Faith" },
+];
+
 const newsItems = [
   { slug: "mass-of-chrism-2023", title: "Mass of Chrism 2023", date: "April 6, 2023", excerpt: "The annual Mass of Chrism was celebrated with great solemnity.", category: "Liturgy" },
   { slug: "catholic-hour-fafaa", title: "Catholic Hour on Fafaa @5", date: "March 15, 2023", excerpt: "Radio ministry reaching thousands in the Volta Region.", category: "Media" },
@@ -49,9 +74,16 @@ export const GalleryPage = () => (
     <PageHeader title="Photo Gallery" subtitle="Images from diocesan events" />
     <section className="py-16 container">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {[1,2,3,4,5,6,7,8].map((i) => (
-          <div key={i} className="aspect-square bg-muted rounded-lg overflow-hidden">
-            <img src="/placeholder.svg" alt={`Gallery ${i}`} className="w-full h-full object-cover hover:scale-105 transition-transform" />
+        {galleryImages.map((image, index) => (
+          <div key={index} className="group relative aspect-square bg-muted rounded-lg overflow-hidden">
+            <img 
+              src={image.src} 
+              alt={image.alt} 
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+              <p className="text-white text-sm font-medium">{image.caption}</p>
+            </div>
           </div>
         ))}
       </div>
