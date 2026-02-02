@@ -229,7 +229,7 @@ const Clergy = () => {
                 contact the diocesan vocation director for guidance on your journey.
               </p>
               <p className="text-sm text-primary-foreground/60">
-                Contact: vocations@keta-akatsidiocese.org
+                Contact: +233 59 244 9804
               </p>
             </div>
           </div>

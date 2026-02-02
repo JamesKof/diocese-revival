@@ -1,38 +1,33 @@
 import { Layout } from "@/components/layout/Layout";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 const secretariatStaff = [
   {
     name: "Very Rev. Fr. John Doe",
     role: "Vicar General",
-    email: "vicargeneral@keta-akatsidiocese.org",
-    phone: "+233 XX XXX XXXX",
+    phone: "+233 59 244 9804",
   },
   {
     name: "Rev. Fr. Peter Smith",
     role: "Chancellor",
-    email: "chancellor@keta-akatsidiocese.org",
-    phone: "+233 XX XXX XXXX",
+    phone: "+233 59 244 9804",
   },
   {
     name: "Mr. Emmanuel Kpodo",
     role: "Financial Administrator",
-    email: "finance@keta-akatsidiocese.org",
-    phone: "+233 XX XXX XXXX",
+    phone: "+233 59 244 9804",
   },
   {
     name: "Mrs. Grace Mensah",
     role: "Administrative Secretary",
-    email: "secretary@keta-akatsidiocese.org",
-    phone: "+233 XX XXX XXXX",
+    phone: "+233 59 244 9804",
   },
   {
     name: "Mr. Patrick Tetteh",
     role: "Communications Officer",
-    email: "communications@keta-akatsidiocese.org",
-    phone: "+233 XX XXX XXXX",
+    phone: "+233 59 244 9804",
   },
 ];
 
@@ -86,14 +81,7 @@ const Secretariat = () => {
                     <Phone className="h-5 w-5 text-accent shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Phone</p>
-                      <p className="text-sm text-muted-foreground">+233 XX XXX XXXX</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-accent shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Email</p>
-                      <p className="text-sm text-muted-foreground">info@keta-akatsidiocese.org</p>
+                      <p className="text-sm text-muted-foreground">+233 59 244 9804</p>
                     </div>
                   </div>
                 </div>
@@ -128,12 +116,6 @@ const Secretariat = () => {
                     </h3>
                     <p className="text-accent font-medium mb-4">{staff.role}</p>
                     <div className="space-y-2 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <Mail className="h-4 w-4" />
-                        <a href={`mailto:${staff.email}`} className="hover:text-accent">
-                          {staff.email}
-                        </a>
-                      </div>
                       <div className="flex items-center gap-2">
                         <Phone className="h-4 w-4" />
                         <span>{staff.phone}</span>
