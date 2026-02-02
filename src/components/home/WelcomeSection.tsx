@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import communityGroup from "@/assets/community-group.jpg";
 
 export function WelcomeSection() {
   return (
@@ -10,8 +11,8 @@ export function WelcomeSection() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/placeholder.svg"
-                alt="Cathedral of the Diocese"
+                src={communityGroup}
+                alt="Diocese community members gathered outside the cathedral"
                 className="w-full h-full object-cover"
               />
             </div>

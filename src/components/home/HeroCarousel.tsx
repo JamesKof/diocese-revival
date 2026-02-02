@@ -4,27 +4,31 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+import heroBishops from "@/assets/hero-bishops.jpg";
+import heroBand from "@/assets/hero-band.jpg";
+import heroChrismMass from "@/assets/hero-chrism-mass.jpg";
+
 const slides = [
   {
     id: 1,
     title: "Welcome to the Catholic Diocese of Keta-Akatsi",
-    subtitle: "Spreading the Gospel in the Volta Region of Ghana",
-    image: "/placeholder.svg",
+    subtitle: "A vibrant faith community spreading the Gospel in the Volta Region of Ghana",
+    image: heroBishops,
     cta: { text: "Learn About Us", href: "/about/history" },
   },
   {
     id: 2,
-    title: "Mass of Chrism 2023",
-    subtitle: "Join us in celebrating the sacred traditions of our faith",
-    image: "/placeholder.svg",
-    cta: { text: "Read More", href: "/media/news/mass-of-chrism-2023" },
+    title: "Celebrating Our Faith Through Music & Tradition",
+    subtitle: "Our youth brass band brings joy and devotion to every diocesan celebration",
+    image: heroBand,
+    cta: { text: "View Gallery", href: "/media/gallery" },
   },
   {
     id: 3,
-    title: "Priestly Ordination",
-    subtitle: "Witnessing the growth of our clergy and religious community",
-    image: "/placeholder.svg",
-    cta: { text: "View Gallery", href: "/media/gallery" },
+    title: "Chrism Mass 2024 - Mafi-Kumasi",
+    subtitle: "Renewing our commitment to Christ through the sacred oils of salvation",
+    image: heroChrismMass,
+    cta: { text: "Read More", href: "/media/news/mass-of-chrism-2023" },
   },
 ];
 

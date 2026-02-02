@@ -3,6 +3,10 @@ import { Calendar, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+import procession from "@/assets/procession.jpg";
+import bishopHermanMemorial from "@/assets/bishop-herman-memorial.jpg";
+import priests from "@/assets/priests.jpg";
+
 export interface NewsItem {
   id: string;
   slug: string;
@@ -17,28 +21,28 @@ const featuredNews: NewsItem[] = [
   {
     id: "1",
     slug: "mass-of-chrism-2023",
-    title: "Mass of Chrism 2023",
+    title: "Mass of Chrism 2024",
     excerpt: "The annual Mass of Chrism was celebrated with great solemnity at the Cathedral, bringing together priests from across the diocese.",
-    date: "April 6, 2023",
-    image: "/placeholder.svg",
+    date: "April 6, 2024",
+    image: procession,
     category: "Liturgy",
   },
   {
     id: "2",
-    slug: "catholic-hour-fafaa",
-    title: "Catholic Hour on Fafaa @5",
-    excerpt: "The diocese continues its evangelization efforts through radio ministry, reaching thousands of faithful in the Volta Region.",
-    date: "March 15, 2023",
-    image: "/placeholder.svg",
-    category: "Media",
+    slug: "bishop-herman-memorial",
+    title: "Bishop Herman Memorial Day",
+    excerpt: "St. Michael Co-Cathedral, Keta commemorates Rt. Rev. Augustin Hermann, the Apostolic Vicar of the Gold Coast Volta Vicariate.",
+    date: "April 8, 2024",
+    image: bishopHermanMemorial,
+    category: "Memorial",
   },
   {
     id: "3",
     slug: "priestly-ordination-2023",
-    title: "Priestly Ordination 2023",
+    title: "Priestly Ordination 2024",
     excerpt: "The diocese welcomed new priests into the sacred ministry during a beautiful ordination ceremony at the Cathedral.",
-    date: "July 22, 2023",
-    image: "/placeholder.svg",
+    date: "July 22, 2024",
+    image: priests,
     category: "Ordination",
   },
 ];
