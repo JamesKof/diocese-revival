@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import dioceseLogo from "@/assets/diocese-logo.jpeg";
 
 export function Footer() {
   return (
@@ -10,9 +11,11 @@ export function Footer() {
           {/* About Section */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-heading font-bold text-lg">KA</span>
-              </div>
+              <img 
+                src={dioceseLogo} 
+                alt="Catholic Diocese of Keta-Akatsi Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="font-heading font-semibold text-lg">Catholic Diocese</h3>
                 <p className="text-sm text-primary-foreground/80">of Keta-Akatsi</p>
