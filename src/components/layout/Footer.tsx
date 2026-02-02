@@ -98,13 +98,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
-                <span className="text-sm text-primary-foreground/80">+233 XX XXX XXXX</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-accent shrink-0" />
-                <a href="mailto:info@keta-akatsidiocese.org" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
-                  info@keta-akatsidiocese.org
-                </a>
+                <span className="text-sm text-primary-foreground/80">+233 59 244 9804</span>
               </li>
             </ul>
 
