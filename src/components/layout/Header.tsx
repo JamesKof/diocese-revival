@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Facebook, Twitter, Youtube } from "lucide-react";
+import dioceseLogo from "@/assets/diocese-logo.jpeg";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -76,9 +77,11 @@ export function Header() {
         <div className="container flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-accent font-heading font-bold text-xl">KA</span>
-            </div>
+            <img 
+              src={dioceseLogo} 
+              alt="Catholic Diocese of Keta-Akatsi Logo" 
+              className="w-14 h-14 object-contain"
+            />
             <div className="hidden md:block">
               <h1 className="font-heading text-lg font-semibold text-primary leading-tight">
                 Catholic Diocese
