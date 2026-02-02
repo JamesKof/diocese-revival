@@ -4,52 +4,62 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const religiousCommunities = [
   {
+    name: "Comboni Missionaries (Mccj)",
+    fullName: "Missionaries of the Comboni",
+    type: "Male Religious",
+    charism: "Missionary congregation dedicated to evangelization in the most challenging regions.",
+    members: [
+      { name: "Rev. Fr. Joseph Rabbiosi", ordained: "May 25, 1974" },
+      { name: "Rev. Fr. Achille Dansou", ordained: "Dec. 12, 2020" },
+      { name: "Rev. Fr. Ephrem Badou", ordained: "Dec. 12, 2020" },
+    ],
+    apostolates: ["Parish ministry", "Evangelization", "Formation"],
+  },
+  {
+    name: "Sacerdotes Cordis (SC)",
+    fullName: "Priests of the Sacred Heart",
+    type: "Male Religious",
+    charism: "Religious congregation devoted to the Sacred Heart of Jesus and service to the poor.",
+    members: [
+      { name: "Rev. Fr. Paul Chinonso Ogene", ordained: "Aug. 8, 2015" },
+      { name: "Rev. Fr. Jean Claude Mabiza", ordained: "Aug. 1, 2015" },
+      { name: "Rev. Fr. Emmanuel A. Nwafor", ordained: "Aug. 26, 2023" },
+    ],
+    apostolates: ["Parish ministry", "Education", "Social services"],
+  },
+  {
     name: "Society of the Divine Word (SVD)",
+    fullName: "Society of the Divine Word",
     type: "Male Religious",
     charism: "Missionary congregation dedicated to proclaiming the Gospel to all nations.",
-    presence: ["Keta", "Denu", "Akatsi"],
+    members: [],
     apostolates: ["Parish ministry", "Education", "Formation"],
-    website: "www.svdworld.org",
+    note: "Our Bishop, Most Rev. Gabriel Edoe Kumordji, is a member of this congregation.",
   },
   {
     name: "Missionary Sisters Servants of the Holy Spirit (SSpS)",
+    fullName: "Holy Spirit Sisters",
     type: "Female Religious",
     charism: "Missionary sisters dedicated to evangelization and works of mercy.",
-    presence: ["Keta", "Sogakope"],
+    members: [],
     apostolates: ["Education", "Healthcare", "Social services"],
-    website: "www.ssps.org",
   },
   {
     name: "Society of African Missions (SMA)",
+    fullName: "Society of African Missions",
     type: "Male Religious",
-    charism: "Missionary society dedicated to the evangelization of Africa.",
-    presence: ["Denu"],
+    charism: "Missionary society dedicated to the evangelization of Africa since the 1860s.",
+    members: [],
     apostolates: ["Parish ministry", "Youth formation"],
-    website: "www.sma.ie",
+    note: "The SMA played a foundational role in establishing the Catholic Church in this region.",
   },
   {
     name: "Medical Missionaries of Mary (MMM)",
+    fullName: "Medical Missionaries of Mary",
     type: "Female Religious",
     charism: "Dedicated to healing ministry and healthcare for the poor.",
-    presence: ["Battor"],
+    members: [],
     apostolates: ["Healthcare", "Maternal care", "HIV/AIDS ministry"],
-    website: "www.mmmworldwide.org",
-  },
-  {
-    name: "Franciscan Sisters of Charity",
-    type: "Female Religious",
-    charism: "Following the spirit of St. Francis in service to the poor.",
-    presence: ["Akatsi"],
-    apostolates: ["Education", "Orphan care", "Social work"],
-    website: "",
-  },
-  {
-    name: "Carmelite Sisters",
-    type: "Female Religious",
-    charism: "Contemplative life and prayer for the Church.",
-    presence: ["Denu"],
-    apostolates: ["Prayer ministry", "Retreat facilitation"],
-    website: "",
   },
 ];
 
@@ -78,6 +88,7 @@ const ReligiousCommunities = () => {
                         <h3 className="font-heading text-lg font-semibold text-foreground">
                           {community.name}
                         </h3>
+                        <p className="text-sm text-muted-foreground">{community.fullName}</p>
                         <span className="text-sm text-accent">{community.type}</span>
                       </div>
                     </div>
@@ -87,21 +98,26 @@ const ReligiousCommunities = () => {
                       "{community.charism}"
                     </p>
                     
-                    <div className="space-y-3 text-sm">
-                      <div>
-                        <span className="font-medium text-foreground">Presence in Diocese:</span>
-                        <div className="flex flex-wrap gap-2 mt-1">
-                          {community.presence.map((location, i) => (
-                            <span
-                              key={i}
-                              className="px-2 py-1 bg-muted rounded-full text-xs text-muted-foreground"
-                            >
-                              {location}
-                            </span>
+                    {community.note && (
+                      <p className="text-sm text-accent bg-accent/10 p-3 rounded-lg mb-4">
+                        {community.note}
+                      </p>
+                    )}
+
+                    {community.members.length > 0 && (
+                      <div className="mb-4">
+                        <span className="font-medium text-foreground text-sm">Members in Diocese:</span>
+                        <ul className="mt-2 space-y-1">
+                          {community.members.map((member, i) => (
+                            <li key={i} className="text-sm text-muted-foreground">
+                              {member.name} <span className="text-xs">(Ord. {member.ordained})</span>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
                       </div>
-                      
+                    )}
+                    
+                    <div className="space-y-3 text-sm">
                       <div>
                         <span className="font-medium text-foreground">Apostolates:</span>
                         <div className="flex flex-wrap gap-2 mt-1">
@@ -115,20 +131,6 @@ const ReligiousCommunities = () => {
                           ))}
                         </div>
                       </div>
-                      
-                      {community.website && (
-                        <div>
-                          <span className="font-medium text-foreground">Website: </span>
-                          <a
-                            href={`https://${community.website}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent hover:underline"
-                          >
-                            {community.website}
-                          </a>
-                        </div>
-                      )}
                     </div>
                   </CardContent>
                 </Card>
