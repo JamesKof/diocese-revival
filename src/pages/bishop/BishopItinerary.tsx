@@ -5,7 +5,7 @@ import { Calendar, MapPin, Clock } from "lucide-react";
 
 const itinerary = [
   {
-    month: "January 2024",
+    month: "January 2026",
     events: [
       {
         date: "January 7",
@@ -28,7 +28,7 @@ const itinerary = [
     ],
   },
   {
-    month: "February 2024",
+    month: "February 2026",
     events: [
       {
         date: "February 2",
@@ -43,13 +43,13 @@ const itinerary = [
         time: "10:00 AM",
       },
       {
-        date: "February 14",
+        date: "February 18",
         event: "Ash Wednesday Mass",
         location: "Holy Spirit Cathedral, Keta",
         time: "6:00 PM",
       },
       {
-        date: "February 18",
+        date: "February 22",
         event: "Pastoral Visit - Sogakope Deanery",
         location: "Christ the King Parish, Sogakope",
         time: "10:00 AM",
@@ -57,16 +57,16 @@ const itinerary = [
     ],
   },
   {
-    month: "March 2024",
+    month: "March 2026",
     events: [
       {
-        date: "March 3",
+        date: "March 1",
         event: "Lenten Recollection for Clergy",
         location: "Diocesan Pastoral Centre",
         time: "9:00 AM",
       },
       {
-        date: "March 10",
+        date: "March 8",
         event: "Pastoral Visit - Keta Deanery",
         location: "Various Parishes",
         time: "All Day",
@@ -78,42 +78,42 @@ const itinerary = [
         time: "9:00 AM",
       },
       {
-        date: "March 24",
+        date: "March 29",
         event: "Palm Sunday Mass",
-        location: "Holy Spirit Cathedral, Keta",
-        time: "9:00 AM",
-      },
-      {
-        date: "March 28",
-        event: "Chrism Mass",
-        location: "Holy Spirit Cathedral, Keta",
-        time: "10:00 AM",
-      },
-      {
-        date: "March 31",
-        event: "Easter Sunday Mass",
         location: "Holy Spirit Cathedral, Keta",
         time: "9:00 AM",
       },
     ],
   },
   {
-    month: "April 2024",
+    month: "April 2026",
     events: [
       {
-        date: "April 7",
+        date: "April 2",
+        event: "Chrism Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "10:00 AM",
+      },
+      {
+        date: "April 5",
+        event: "Easter Sunday Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "April 12",
         event: "Divine Mercy Sunday",
         location: "Holy Spirit Cathedral, Keta",
         time: "3:00 PM",
       },
       {
-        date: "April 14",
+        date: "April 19",
         event: "Confirmation Mass - Denu Deanery",
         location: "St. Francis Parish, Aflao",
         time: "10:00 AM",
       },
       {
-        date: "April 21",
+        date: "April 26",
         event: "World Day of Prayer for Vocations",
         location: "Holy Spirit Cathedral, Keta",
         time: "9:00 AM",
