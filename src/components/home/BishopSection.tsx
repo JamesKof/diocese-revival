@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import flagBearer from "@/assets/flag-bearer.jpg";
+import bishopKumordji from "@/assets/bishop-kumordji.jpg";
 
 export function BishopSection() {
   return (
@@ -56,9 +56,9 @@ export function BishopSection() {
             <div className="relative">
               <div className="w-64 h-80 md:w-80 md:h-96 rounded-lg overflow-hidden shadow-2xl border-4 border-accent/20">
                 <img
-                  src={flagBearer}
-                  alt="Knight of St. John carrying the Ghana flag during diocesan celebration"
-                  className="w-full h-full object-cover"
+                  src={bishopKumordji}
+                  alt="Most Rev. Gabriel Edoe Kumordji, SVD - Bishop of Keta-Akatsi"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               {/* Decorative Frame */}
