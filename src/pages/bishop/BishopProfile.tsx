@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import bishopKumordji from "@/assets/bishop-kumordji.jpg";
 
 const BishopProfile = () => {
   return (
@@ -21,9 +22,9 @@ const BishopProfile = () => {
                 <div className="sticky top-24">
                   <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-xl border-4 border-accent/20">
                     <img
-                      src="/placeholder.svg"
+                      src={bishopKumordji}
                       alt="Most Rev. Gabriel Edoe Kumordji, SVD"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <div className="mt-6 text-center">
