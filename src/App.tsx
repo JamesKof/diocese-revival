@@ -23,6 +23,7 @@ import BishopEmeritus from "./pages/bishop/BishopEmeritus";
 
 // Deanery Pages
 import { AkatsiDeanery, DenuDeanery, KetaDeanery, SogakopeDeanery } from "./pages/deaneries/DeaneryPages";
+import ParishFinder from "./pages/ParishFinder";
 
 // Media Pages
 import { NewsPage, AnnouncementsPage, GalleryPage, NewsArticle } from "./pages/media/MediaPages";
@@ -57,6 +58,7 @@ const App = () => (
           <Route path="/deaneries/denu" element={<DenuDeanery />} />
           <Route path="/deaneries/keta" element={<KetaDeanery />} />
           <Route path="/deaneries/sogakope" element={<SogakopeDeanery />} />
+          <Route path="/parish-finder" element={<ParishFinder />} />
           
           {/* Media Routes */}
           <Route path="/media/news" element={<NewsPage />} />

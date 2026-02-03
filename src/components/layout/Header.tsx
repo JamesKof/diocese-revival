@@ -29,6 +29,7 @@ const bishopLinks = [
 ];
 
 const deaneryLinks = [
+  { title: "Parish Finder", href: "/parish-finder" },
   { title: "Akatsi Deanery", href: "/deaneries/akatsi" },
   { title: "Denu Deanery", href: "/deaneries/denu" },
   { title: "Keta Deanery", href: "/deaneries/keta" },
