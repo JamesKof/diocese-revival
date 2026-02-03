@@ -120,6 +120,268 @@ const itinerary = [
       },
     ],
   },
+  {
+    month: "May 2026",
+    events: [
+      {
+        date: "May 1",
+        event: "Feast of St. Joseph the Worker",
+        location: "St. Joseph the Worker Parish, Aflao",
+        time: "9:00 AM",
+      },
+      {
+        date: "May 10",
+        event: "Mother's Day Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "10:00 AM",
+      },
+      {
+        date: "May 14",
+        event: "Ascension Thursday Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "May 24",
+        event: "Pentecost Sunday Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "May 31",
+        event: "Visitation of the Blessed Virgin Mary",
+        location: "St. Mary Parish, Anlo-Afiadenyigba",
+        time: "10:00 AM",
+      },
+    ],
+  },
+  {
+    month: "June 2026",
+    events: [
+      {
+        date: "June 7",
+        event: "Corpus Christi Procession",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "June 14",
+        event: "Pastoral Visit - Akatsi Deanery",
+        location: "Various Parishes",
+        time: "All Day",
+      },
+      {
+        date: "June 19",
+        event: "Solemnity of the Sacred Heart",
+        location: "Sacred Heart Parish, Afife",
+        time: "10:00 AM",
+      },
+      {
+        date: "June 21",
+        event: "Father's Day Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "10:00 AM",
+      },
+      {
+        date: "June 29",
+        event: "Solemnity of Ss. Peter & Paul",
+        location: "Ss. Peter & Paul Parish, Aflao",
+        time: "9:00 AM",
+      },
+    ],
+  },
+  {
+    month: "July 2026",
+    events: [
+      {
+        date: "July 5",
+        event: "Confirmation Mass - Sogakope Deanery",
+        location: "Holy Cross Parish, Sogakope",
+        time: "10:00 AM",
+      },
+      {
+        date: "July 12",
+        event: "Pastoral Visit - Denu Deanery",
+        location: "Various Parishes",
+        time: "All Day",
+      },
+      {
+        date: "July 19",
+        event: "Youth Sunday Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "July 26",
+        event: "Feast of Ss. Joachim & Anne",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "10:00 AM",
+      },
+    ],
+  },
+  {
+    month: "August 2026",
+    events: [
+      {
+        date: "August 6",
+        event: "Feast of the Transfiguration",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "August 15",
+        event: "Assumption of the Blessed Virgin Mary",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "10:00 AM",
+      },
+      {
+        date: "August 22",
+        event: "Queenship of Mary",
+        location: "St. Mary Parish, Hatorgodo",
+        time: "10:00 AM",
+      },
+      {
+        date: "August 30",
+        event: "Recollection for Catechists",
+        location: "Diocesan Pastoral Centre",
+        time: "9:00 AM",
+      },
+    ],
+  },
+  {
+    month: "September 2026",
+    events: [
+      {
+        date: "September 6",
+        event: "Diocesan Day of Prayer for the Environment",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "September 14",
+        event: "Feast of the Exaltation of the Holy Cross",
+        location: "Holy Cross Parish, Sogakope",
+        time: "10:00 AM",
+      },
+      {
+        date: "September 21",
+        event: "Catechetical Sunday",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "September 29",
+        event: "Feast of the Archangels",
+        location: "St. Michael Parish, Keta",
+        time: "10:00 AM",
+      },
+    ],
+  },
+  {
+    month: "October 2026",
+    events: [
+      {
+        date: "October 4",
+        event: "Feast of St. Francis of Assisi",
+        location: "St. Francis Parish, Aflao",
+        time: "10:00 AM",
+      },
+      {
+        date: "October 7",
+        event: "Feast of Our Lady of the Rosary",
+        location: "Holy Rosary Parish, Dabala Junction",
+        time: "10:00 AM",
+      },
+      {
+        date: "October 18",
+        event: "World Mission Sunday",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "October 25",
+        event: "Confirmation Mass - Keta Deanery",
+        location: "St. Michael Parish, Keta",
+        time: "10:00 AM",
+      },
+    ],
+  },
+  {
+    month: "November 2026",
+    events: [
+      {
+        date: "November 1",
+        event: "Solemnity of All Saints",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "November 2",
+        event: "All Souls Day Mass",
+        location: "Diocesan Cemetery, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "November 15",
+        event: "World Day of the Poor",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "10:00 AM",
+      },
+      {
+        date: "November 22",
+        event: "Solemnity of Christ the King",
+        location: "Christ the King Parish, Akatsi",
+        time: "10:00 AM",
+      },
+      {
+        date: "November 29",
+        event: "First Sunday of Advent",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+    ],
+  },
+  {
+    month: "December 2026",
+    events: [
+      {
+        date: "December 8",
+        event: "Solemnity of the Immaculate Conception",
+        location: "Immaculate Conception Parish, Agbozume",
+        time: "10:00 AM",
+      },
+      {
+        date: "December 13",
+        event: "Gaudete Sunday - Advent Recollection",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "December 20",
+        event: "Fourth Sunday of Advent",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "December 24",
+        event: "Christmas Vigil Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "10:00 PM",
+      },
+      {
+        date: "December 25",
+        event: "Christmas Day Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 AM",
+      },
+      {
+        date: "December 31",
+        event: "New Year's Eve Thanksgiving Mass",
+        location: "Holy Spirit Cathedral, Keta",
+        time: "9:00 PM",
+      },
+    ],
+  },
 ];
 
 const BishopItinerary = () => {
