@@ -143,6 +143,19 @@ export function Footer() {
             "Go therefore and make disciples of all nations" - Matthew 28:19
           </p>
         </div>
+        <div className="container pb-4">
+          <p className="text-xs text-primary-foreground/50 text-center">
+            Developed by{" "}
+            <a 
+              href="http://www.gotechpluz.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent/80 transition-colors font-medium"
+            >
+              Gotechpluz
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
