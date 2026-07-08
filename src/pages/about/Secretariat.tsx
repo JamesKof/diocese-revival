@@ -1,33 +1,37 @@
 import { Layout } from "@/components/layout/Layout";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
+
+const bishop = {
+  name: "Most Rev. Gabriel Edoe Kumordji, SVD",
+  role: "Bishop of Keta-Akatsi",
+  email: "gabkum@hotmail.com",
+};
 
 const secretariatStaff = [
   {
-    name: "Very Rev. Fr. John Doe",
+    name: "Msgr. Peter Huletey",
     role: "Vicar General",
-    phone: "+233 59 244 9804",
   },
   {
-    name: "Rev. Fr. Peter Smith",
+    name: "Rev. Fr. Emmanuel Kpodo",
     role: "Chancellor",
-    phone: "+233 59 244 9804",
   },
   {
-    name: "Mr. Emmanuel Kpodo",
+    name: "Rev. Fr. Sebastian Dela Gidiglo",
     role: "Financial Administrator",
-    phone: "+233 59 244 9804",
   },
   {
-    name: "Mrs. Grace Mensah",
-    role: "Administrative Secretary",
-    phone: "+233 59 244 9804",
+    name: "Mr. Alex Dufli",
+    role: "Account Officer",
   },
   {
-    name: "Mr. Patrick Tetteh",
-    role: "Communications Officer",
+    name: "Rev. Fr. Michael Selasi Combey",
+    role: "Bishop's Secretary",
     phone: "+233 59 244 9804",
+    email: "kadbishopsecretary@gmail.com",
+    note: "Office Line for Calls and WhatsApp",
   },
 ];
 
@@ -71,8 +75,8 @@ const Secretariat = () => {
                     <div>
                       <p className="font-medium text-foreground">Address</p>
                       <p className="text-sm text-muted-foreground">
-                        P.O. Box KA 47<br />
-                        Keta, Volta Region<br />
+                        Box AK 90, Akatsi<br />
+                        Volta Region<br />
                         Ghana
                       </p>
                     </div>
@@ -80,8 +84,17 @@ const Secretariat = () => {
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-accent shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">Phone</p>
+                      <p className="font-medium text-foreground">Phone / WhatsApp</p>
                       <p className="text-sm text-muted-foreground">+233 59 244 9804</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="h-5 w-5 text-accent shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Bishop's Secretary Email</p>
+                      <a href="mailto:kadbishopsecretary@gmail.com" className="text-sm text-muted-foreground hover:text-accent">
+                        kadbishopsecretary@gmail.com
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -103,6 +116,27 @@ const Secretariat = () => {
               </div>
             </div>
 
+            {/* Bishop */}
+            <h2 className="font-heading text-2xl font-semibold text-foreground mb-6">
+              The Bishop
+            </h2>
+            <Card className="border-accent/50 mb-12">
+              <CardContent className="p-6">
+                <h3 className="font-heading font-semibold text-foreground text-lg">
+                  {bishop.name}
+                </h3>
+                <p className="text-accent font-medium mb-4">{bishop.role}</p>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <Mail className="h-4 w-4" />
+                    <a href={`mailto:${bishop.email}`} className="hover:text-accent">
+                      {bishop.email}
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Staff */}
             <h2 className="font-heading text-2xl font-semibold text-foreground mb-8">
               Secretariat Staff
@@ -116,10 +150,23 @@ const Secretariat = () => {
                     </h3>
                     <p className="text-accent font-medium mb-4">{staff.role}</p>
                     <div className="space-y-2 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <Phone className="h-4 w-4" />
-                        <span>{staff.phone}</span>
-                      </div>
+                      {staff.phone && (
+                        <div className="flex items-center gap-2">
+                          <Phone className="h-4 w-4" />
+                          <span>
+                            {staff.phone}
+                            {staff.note && <span className="text-xs ml-1">({staff.note})</span>}
+                          </span>
+                        </div>
+                      )}
+                      {staff.email && (
+                        <div className="flex items-center gap-2">
+                          <Mail className="h-4 w-4" />
+                          <a href={`mailto:${staff.email}`} className="hover:text-accent">
+                            {staff.email}
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

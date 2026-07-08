@@ -93,12 +93,18 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-sm text-primary-foreground/80">
-                  P.O. Box KA 47, Keta,<br />Volta Region, Ghana
+                  Box AK 90, Akatsi,<br />Volta Region, Ghana
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
                 <span className="text-sm text-primary-foreground/80">+233 59 244 9804</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="h-5 w-5 text-accent shrink-0" />
+                <a href="mailto:kadbishopsecretary@gmail.com" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors break-all">
+                  kadbishopsecretary@gmail.com
+                </a>
               </li>
             </ul>
 
