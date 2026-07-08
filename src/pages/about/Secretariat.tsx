@@ -116,6 +116,27 @@ const Secretariat = () => {
               </div>
             </div>
 
+            {/* Bishop */}
+            <h2 className="font-heading text-2xl font-semibold text-foreground mb-6">
+              The Bishop
+            </h2>
+            <Card className="border-accent/50 mb-12">
+              <CardContent className="p-6">
+                <h3 className="font-heading font-semibold text-foreground text-lg">
+                  {bishop.name}
+                </h3>
+                <p className="text-accent font-medium mb-4">{bishop.role}</p>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <Mail className="h-4 w-4" />
+                    <a href={`mailto:${bishop.email}`} className="hover:text-accent">
+                      {bishop.email}
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Staff */}
             <h2 className="font-heading text-2xl font-semibold text-foreground mb-8">
               Secretariat Staff
@@ -129,10 +150,23 @@ const Secretariat = () => {
                     </h3>
                     <p className="text-accent font-medium mb-4">{staff.role}</p>
                     <div className="space-y-2 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <Phone className="h-4 w-4" />
-                        <span>{staff.phone}</span>
-                      </div>
+                      {staff.phone && (
+                        <div className="flex items-center gap-2">
+                          <Phone className="h-4 w-4" />
+                          <span>
+                            {staff.phone}
+                            {staff.note && <span className="text-xs ml-1">({staff.note})</span>}
+                          </span>
+                        </div>
+                      )}
+                      {staff.email && (
+                        <div className="flex items-center gap-2">
+                          <Mail className="h-4 w-4" />
+                          <a href={`mailto:${staff.email}`} className="hover:text-accent">
+                            {staff.email}
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
