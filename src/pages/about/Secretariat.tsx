@@ -1,33 +1,37 @@
 import { Layout } from "@/components/layout/Layout";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
+
+const bishop = {
+  name: "Most Rev. Gabriel Edoe Kumordji, SVD",
+  role: "Bishop of Keta-Akatsi",
+  email: "gabkum@hotmail.com",
+};
 
 const secretariatStaff = [
   {
-    name: "Very Rev. Fr. John Doe",
+    name: "Msgr. Peter Huletey",
     role: "Vicar General",
-    phone: "+233 59 244 9804",
   },
   {
-    name: "Rev. Fr. Peter Smith",
+    name: "Rev. Fr. Emmanuel Kpodo",
     role: "Chancellor",
-    phone: "+233 59 244 9804",
   },
   {
-    name: "Mr. Emmanuel Kpodo",
+    name: "Rev. Fr. Sebastian Dela Gidiglo",
     role: "Financial Administrator",
-    phone: "+233 59 244 9804",
   },
   {
-    name: "Mrs. Grace Mensah",
-    role: "Administrative Secretary",
-    phone: "+233 59 244 9804",
+    name: "Mr. Alex Dufli",
+    role: "Account Officer",
   },
   {
-    name: "Mr. Patrick Tetteh",
-    role: "Communications Officer",
+    name: "Rev. Fr. Michael Selasi Combey",
+    role: "Bishop's Secretary",
     phone: "+233 59 244 9804",
+    email: "kadbishopsecretary@gmail.com",
+    note: "Office Line for Calls and WhatsApp",
   },
 ];
 
