@@ -75,8 +75,8 @@ const Secretariat = () => {
                     <div>
                       <p className="font-medium text-foreground">Address</p>
                       <p className="text-sm text-muted-foreground">
-                        P.O. Box KA 47<br />
-                        Keta, Volta Region<br />
+                        Box AK 90, Akatsi<br />
+                        Volta Region<br />
                         Ghana
                       </p>
                     </div>
@@ -84,8 +84,17 @@ const Secretariat = () => {
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-accent shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">Phone</p>
+                      <p className="font-medium text-foreground">Phone / WhatsApp</p>
                       <p className="text-sm text-muted-foreground">+233 59 244 9804</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="h-5 w-5 text-accent shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Bishop's Secretary Email</p>
+                      <a href="mailto:kadbishopsecretary@gmail.com" className="text-sm text-muted-foreground hover:text-accent">
+                        kadbishopsecretary@gmail.com
+                      </a>
                     </div>
                   </div>
                 </div>
